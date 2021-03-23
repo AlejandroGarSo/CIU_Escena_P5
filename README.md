@@ -2,15 +2,15 @@
 Por Alejandro García Sosa
 
 ## Controles:
-H - Abre y cierra el menú de ayuda.
+**H** - Abre y cierra el menú de ayuda.
 
-L - Cambia la iluminación.
+**L** - Cambia la iluminación.
 
-W/A/S/D - Movimiento de la cámara.
+**W/A/S/D** - Movimiento de la cámara.
 
-Q/E - Altura de la cámara.
+**Q/E** - Altura de la cámara.
 
-Mover el ratón - Girar la cámara.
+**Mover el ratón** - Girar la cámara.
 
 ## Descripción del proyecto:
 En esta tarea, el objetivo era crear una escena libre, la cual debe tener objetos tridimensionales, y que utilice texturas, iluminación y movimiento de cámara. Para esto último se permitía utilizar una librería.
