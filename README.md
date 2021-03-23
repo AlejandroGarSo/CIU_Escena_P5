@@ -1,7 +1,7 @@
 # CIU_Escena_P5
 Por Alejandro García Sosa
 
-##Controles:
+## Controles:
 H - Abre y cierra el menú de ayuda.
 
 L - Cambia la iluminación.
@@ -19,8 +19,40 @@ La escena escogida es una escena subacuática, con una roca rodeada de corales, 
 
 La cámara se controla mediante el uso de la librería QueasyCam, la cual incluye por defecto el movimiento de la cámara.
 
-Al pulsar la tecla L, la iluminaciñon cambiará entre los modos "Midday", "Sunset" y "Midnight". PAra ello, se usan ambientLights con las tonalidades deseadas para dar el efecto de iluminación deseado.
+Al pulsar la tecla L, la iluminación cambiará entre los modos "Midday", "Sunset" y "Midnight". Para ello, se usan ambientLights con las tonalidades deseadas para dar el efecto de iluminación deseado.
 
+## Ejemplos de código generado:
+### Generador del fondo:
+```
+void genLimits(){
+  pushMatrix();
+  stroke(0);
+  noStroke();
+  PShape lim = createShape(BOX,1200,300,1200);
+  lim.setTexture(sea);
+  shape(lim);
+  translate(0,150,0);
+  PShape floor = createShape(BOX,1200,10,1200);
+  floor.setTexture(sand);
+  shape(floor);
+  translate(0,-300,0);
+  PShape top = createShape(BOX,1200,10,1200);
+  top.setTexture(sky);
+  shape(top);
+  popMatrix();
+}
+```
+### Generador de objeto 3d:
+```
+void drawShark(int x, int y, int z, int r){
+  pushMatrix();
+  translate(x,y,z);
+  rotateX(radians(180));
+  rotateY(radians(r));
+  shape(shark);
+  popMatrix();
+}
+```
 ## Resultado en GIF:
 ![Screenshot](UnderwaterGif.gif)
 
