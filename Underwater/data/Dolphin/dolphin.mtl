@@ -1,0 +1,9 @@
+newmtl JOBJ_1_DOBJ_0_MOBJ_0
+ illum 2
+ Ka 0.2 0.2 0.2
+ Kd 1 1 1
+ Ks 0.2 0.2 0.2
+ Ns 50
+ d 1
+ Tr 0
+ map_Kd TOBJ_0.png
